@@ -5,10 +5,13 @@
 .DS_Store?
 Icon?
 
+Secrets.*
+_*
 
 ## Build generated
 build/
 DerivedData
+swift-3.0-RELEASE-ubuntu14.04
 
 ## Various settings
 *.pbxuser
@@ -21,6 +24,9 @@ DerivedData
 !default.perspectivev3
 xcuserdata
 
+## Sublime
+*.sublime*
+
 ## Other
 *.xccheckout
 *.moved-aside
@@ -31,6 +37,16 @@ xcuserdata
 *.hmap
 *.ipa
 
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+.build/
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
@@ -38,6 +54,7 @@ xcuserdata
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 # Pods/
+.swift-version
 
 # Carthage
 #
@@ -55,3 +72,4 @@ Carthage/
 
 fastlane/report.xml
 fastlane/screenshots
+/.swiftpm
